@@ -1,5 +1,5 @@
+import Home from "./Pages/Home/Page.jsx";
 import { Routes, Route } from "react-router-dom";
-import Home from "../src/Pages/Home.jsx";
 
 
 export default function App() {

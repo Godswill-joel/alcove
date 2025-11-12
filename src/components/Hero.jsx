@@ -65,6 +65,7 @@ export default function Hero() {
                             Location
                         </label>
                         <select className="w-full bg-white/10 border border-white/40 text-white/95 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-white/50">
+                            <option className="text-black"> Location</option>
                             <option className="text-black">Lagos</option>
                             <option className="text-black">Abuja</option>
                         </select>
@@ -91,7 +92,6 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* Price Range */}
                     <div>
                         <label className="text-xs text-white/90 mb-2 block font-medium">
                             Price Range
@@ -111,7 +111,7 @@ export default function Hero() {
                                 }}
                             ></div>
 
-                            {/* Min Slider */}
+                          
                             <input
                                 type="range"
                                 min={MIN_LIMIT}
@@ -124,7 +124,6 @@ export default function Hero() {
                                 className="absolute w-full top-3 accent-white cursor-pointer"
                             />
 
-                            {/* Max Slider */}
                             <input
                                 type="range"
                                 min={MIN_LIMIT}
@@ -138,14 +137,13 @@ export default function Hero() {
                             />
                         </div>
 
-                        {/* Price Values */}
                         <div className="flex justify-between text-xs text-white/90">
                             <span>₦{min.toLocaleString()}</span>
                             <span>₦{max.toLocaleString()}</span>
                         </div>
                     </div>
 
-                    {/* Search Button */}
+            
                     <button className="w-full bg-[#0A1A33]/90 hover:bg-[#132a54] transition text-white py-3 rounded-xl font-medium flex justify-between items-center gap-2 shadow-lg text-sm">
                         Search
                         <img src={SearchIcon} alt="search" className="w-5" />
@@ -153,14 +151,13 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* CTA Button at Bottom */}
-            <div className="absolute left-24 bottom-12 z-10">
+            <div className="absolute left-24 bottom-3 z-10">
                 <button
-                    className="text-white font-semibold hover:opacity-90 transition-all"
+                    className="text-white font-bold hover:bg-[#0B1C33CC] transition-all"
                     style={{
                         backgroundColor: "#0B1C33",
                         width: "380px",
-                        height: "100px",
+                        height: "80px",
                         borderRadius: "60px",
                     }}
                 >
