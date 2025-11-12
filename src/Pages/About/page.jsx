@@ -3,7 +3,7 @@ import HowItWorks from "../../components/home/Howitworks";
 import WhyChoose from "../../components/home/Whychoose";
 import FeaturedApartments from "../../components/home/Featureapartment";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Hero />

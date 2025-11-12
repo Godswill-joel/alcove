@@ -52,9 +52,9 @@ export default function Hero() {
                 {/* Glass Search Box */}
                 <div
                     className="
-            absolute h-50px right-4 sm:right-10 md:right-16 lg:right-24 lg:bottom-8
-            w-[92%] sm:w-[380px] md:w-[450px]
-            bg-white/15 backdrop-blur-2xl border border-white/30 
+            absolute  right-4 sm:right-10 md:right-12 lg:right-24 lg:bottom-10
+            w-[92%] sm:w-[380px] md:w-[460px]
+            bg-white/1 backdrop-blur-sm border border-white/30 
             shadow-[0_8px_32px_rgba(0,0,0,0.25)]
             rounded-2xl p-6 space-y-5
           "

@@ -1,0 +1,100 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
+import Bedroom from "../../../public/assets/Bedroom.png"
+import Bathroom from "../../../public/assets/Bathroom.png"
+import Guests from "../../../public/assets/Guests.png"
+import Location from "../../../public/assets/Location.png"
+import Available from "../../../public/assets/Available.png"
+import { apartments } from "../../constants/data";
+
+const FeaturedApartments = ({ limit }) => {
+
+    const displayedApts = limit ? apartments.slice(0, limit) : apartments;
+
+    return (
+        <section className="py-10 px-4 md:px-12 bg-white">
+            <div className="flex w-full px-7 items-center justify-between mb-8">
+                <div>
+                    <h2 className="text-5xl tracking-wide font-bold text-[#0B1C33]" style={{
+                        fontFamily: "Manrope",
+                    }}>Featured Apartments</h2>
+                    <p className="text-[#000000] text-xl tracking-wide mt-1"
+                        style={{
+                            fontFamily: "inter",
+                        }}>Explore Our Premium Spaces</p>
+                </div>
+                <Link href="/apartments" className="text-[#0B1C33] text-5xl  font-medium hover:underline" style={{
+                    fontFamily: "Manrope",
+                }}>
+                    See all
+                </Link>
+            </div>
+
+            {/* Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                {displayedApts.map((apt) => (
+                    <div
+                        key={apt.id}
+                        className="bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between mx-auto"
+                        style={{
+                            width: "537.16px",
+                            height: "522.82px",
+                        }}
+                    >
+                        <div>
+                            <div className="relative">
+                                <img
+                                    src={apt.image}
+                                    alt={apt.title}
+                                    className="w-full h-[260px] object-cover rounded-t-2xl"
+                                />
+                                {apt.available && (
+                                    <span className="absolute right-3  text-[#000000] text-sm font-semibold flex items-center gap-1  px-2 py-3 rounded-lg">
+                                        Available
+                                        <img src={Available} alt="available icon" className="w-4 h-4" />
+                                    </span>
+                                )}
+                            </div>
+                            <div className="px-7 py-2 flex flex-col justify-between h-[calc(532.82px-260px)] w-full">
+                                <div>
+                                    <h3 className="text-lg font-semibold text-[#0B1C33]">{apt.title}</h3>
+
+                                    <div className="flex items-center gap-2 text-[#00000] mt-8">
+                                        <img src={Location} alt={apt.location} className="w-4 h-4" />
+                                        <p className="text-sm">{apt.location}</p>
+                                    </div>
+
+                                    <div className="flex items-center justify-between mt-12  text-[#000000] text-sm">
+                                        <div className="flex items-center gap-1">
+                                            <img src={Bedroom} alt="bedroom icon" className="w-4 h-4" />
+                                            <span>{apt.beds} Bedroom</span>
+                                        </div>
+                                        <div className="flex items-center gap-1">
+                                            <img src={Bathroom} alt="bathroom icon" className="w-4 h-4" />
+                                            <span>{apt.baths} Bathroom</span>
+                                        </div>
+                                        <div className="flex items-center gap-1">
+                                            <img src={Guests} alt="guests icon" className="w-4 h-4" />
+                                            <span>{apt.guests} Guests</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p className="text-xl font-bold text-[#0B1C33] mt-4 mb-8">{apt.price}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                ))}
+                <div className="flex justify-end px-5 pb-5">
+                    <button className="bg-[#0B1C33] text-white p-3 rounded-full hover:bg-[#1B2C43] transition">
+                        <ArrowUpRight size={20} />
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default FeaturedApartments;
