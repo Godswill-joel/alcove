@@ -5,6 +5,12 @@ import feature1 from "../../public/assets/house.png";
 import feature2 from "../../public/assets/lock.png";
 import feature3 from "../../public/assets/clock.png";
 import feature4 from "../../public/assets/flexibility.png";
+import testomony1 from "../../public/img/James.png";
+import testomony2 from "../../public/img/Amanda.png";
+import testomony3 from "../../public/img/Tobi.png";
+import testomony4 from "../../public/img/dave.png";
+import testomony5 from "../../public/img/Sarah.png";
+import testomony6 from "../../public/img/Mark.png";
 
 
 export const apartments = [
@@ -108,3 +114,71 @@ export const features = [
             "Whether it’s a quick getaway or a long-term stay, alcove gives you flexible booking options to fit your lifestyle and schedule.",
     },
 ];
+
+
+export const testimonials = [
+    {
+        id: "t1",
+        name: "James Mike",
+        location: "Port Harcourt, Nigeria",
+        avatar: testomony1,
+        rating: 5,
+        text:
+            "Alcove made my business trip so comfortable. the apartment was spotless, modern, and exactly as described. i'll definitely book again.",
+    },
+    {
+        id: "t2",
+        name: "Amanda B",
+        location: "Port Harcourt, Nigeria",
+        avatar: testomony2,
+        rating: 5,
+        text:
+            "Loved the interior and the quick check-in process. Everything worked perfectly. Just wish I could have stayed longer.",
+    },
+    {
+        id: "t3",
+        name: "Tobi Alade",
+        location: "Port Harcourt, Nigeria",
+        avatar:testomony3,
+        rating: 5,
+        text:
+            "I’ve used many shortlet platforms, but Alcove stands out for its quality and reliability. Great experience from start to finish.",
+    },
+    {
+        id: "t4",
+        name: "Simi O",
+        location: "Lagos, Nigeria",
+        avatar:testomony4,
+        rating: 5,
+        text:
+            "Fantastic host experience. The apartment was fully stocked and the support team was responsive. Highly recommended.",
+    },
+    {
+        id: "t5",
+        name: "Michael K",
+        location: "Abuja, Nigeria",
+        avatar: testomony5,
+        rating: 5,
+        text:
+            "Great location, amazing design, and excellent value. Everything was seamless during my stay.",
+    },
+    {
+        id: "t6",
+        name: "Amaka R",
+        location: "Enugu, Nigeria",
+        avatar: testomony6,
+        rating: 5,
+        text:
+            "Perfect place for a weekend getaway. Clean, comfortable, and exactly as pictured. We’ll be back!",
+    },
+    // {
+    //     id: "t7",
+    //     name: "Daniel N",
+    //     location: "Ibadan, Nigeria",
+    //     avatar: "/avatars/user7.jpg",
+    //     rating: 5,
+    //     text:
+    //         "Professional service and great attention to details. I appreciated the quick check-in and tidy space.",
+    // },
+];
+

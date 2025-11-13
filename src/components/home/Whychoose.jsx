@@ -31,11 +31,6 @@ export default function WhyChoose() {
                                     height: "206.82px",
                                 }}
                             >
-                                {/* <div
-                                    aria-hidden
-                                    className="absolute -left-4 px-3  -translate-y-1/2 w-10 h-10 rounded-r-lg"
-                                    style={{ boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.02)" }}
-                                /> */}
 
                                 {/* Icon Bubble */}
                                 <div className="absolute left-1   -translate-y-1/2 w-16 h-16 rounded-md bg-white flex items-center justify-center shadow-md">
