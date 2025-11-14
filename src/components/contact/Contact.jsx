@@ -58,7 +58,7 @@ export default function ContactSection() {
       <div className="flex flex-col md:flex-row justify-between w-full gap-16">
 
         <div className="w-full md:w-2/3">
-          {/* Contact Info */}
+          
           <h2
             className="text-3xl md:text-5xl font-bold text-[#333333] mb-4"
             style={{ fontFamily: "Manrope" }}
@@ -74,7 +74,6 @@ export default function ContactSection() {
             listing an apartment, or need support along the way.
           </p>
 
-          {/* CONTACT FORM */}
           <h3
             className="text-2xl md:text-3xl font-semibold text-[#333333] mb-6"
             style={{ fontFamily: "Manrope" }}
@@ -86,7 +85,7 @@ export default function ContactSection() {
             onSubmit={handleSubmit}
             className="p-6 space-y-5 shadow-sm max-w-xl"
           >
-            {/* Full Name */}
+           
             <div>
               <label className="block text-sm font-semibold mb-1">Full name</label>
               <input
@@ -100,7 +99,7 @@ export default function ContactSection() {
               />
             </div>
 
-            {/* Email */}
+            
             <div>
               <label className="block text-sm font-semibold mb-1">Email Address</label>
               <input
@@ -114,7 +113,6 @@ export default function ContactSection() {
               />
             </div>
 
-            {/* Phone */}
             <div>
               <label className="block text-sm font-semibold mb-1">Phone Number</label>
               <input
@@ -128,7 +126,6 @@ export default function ContactSection() {
               />
             </div>
 
-            {/* Inquiry Type */}
             <div>
               <label className="block text-sm font-semibold mb-1">Inquiry Type</label>
               <select
@@ -146,7 +143,6 @@ export default function ContactSection() {
               </select>
             </div>
 
-            {/* Message */}
             <div>
               <label className="block text-sm font-semibold mb-1">Message</label>
               <textarea
@@ -172,7 +168,7 @@ export default function ContactSection() {
           <ul className="space-y-5 text-gray-800 text-base md:text-lg mb-12">
             {socialLinks.map((item) => (
               <li key={item.id} className="flex items-center gap-3">
-                      <img src={item.img} alt={item.label} className="w-5 h-5 object-contain" />
+                <img src={item.img} alt={item.label} className="w-5 h-5 object-contain" />
                 <span>{item.label}</span>
               </li>
             ))}
