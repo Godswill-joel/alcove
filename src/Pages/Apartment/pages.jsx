@@ -1,13 +1,9 @@
-import WhyChoose from "../../components/home/Whychoose";
 import Testimonials from "../../components/home/Testimony";
 import CallToAction from "../../components/CallAction";
 import abouthero from "../../../public/img/Aboutbg.png";
 import about from "../../../public/img/About.png";
-import OurStory from "../../components/about/Ourstory";
-import OurMission from "../../components/about/Mission";
-import OurValues from "../../components/about/Values";
 
-export default function About() {
+export default function Apartment() {
     return (
         <div>
             <CallToAction
@@ -17,10 +13,6 @@ export default function About() {
                 buttonText="Explore Apartments"
                 onButtonClick={() => console.log("Booking...")}
             />
-            <OurStory />
-            <OurMission />
-            <WhyChoose />
-            <OurValues />
             <Testimonials />
             <CallToAction
                 backgroundImage={about}

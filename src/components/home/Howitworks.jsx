@@ -49,7 +49,7 @@ export default function HowItWorks() {
                         className="relative bg-[#F8F8F9] h-[420px]  rounded-2xl p-12 shadow-sm  transition-all duration-300"
                     >
                        
-                        <div className="absolute -bottom-6 left-1 bg-[#0A1A33] text-white text-2xl font-semibold w-14 h-14 rounded-full flex items-center justify-center">
+                        <div className="absolute bottom-5 left-1 bg-[#0A1A33] text-white text-2xl font-semibold w-14 h-14 rounded-full flex items-center justify-center">
                             {step.id}
                         </div>
 

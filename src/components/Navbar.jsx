@@ -55,7 +55,6 @@ export default function Navbar() {
         </button> */}
       </div>
 
-      {/* ===== Mobile Dropdown Menu ===== */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-md">
           <div className="flex flex-col space-y-4 py-4 px-6">

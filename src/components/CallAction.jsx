@@ -11,21 +11,21 @@ export default function CallToAction({
     return (
         <section className="relative h-screen py-24 px-12">
             <div
-                className="relative inset-0 h-full z-10 flex flex-col justify-center px-6 sm:px-10 md:px-20"
+                className="relative rounded-xl inset-0 h-full z-10 flex flex-col justify-center px-6 sm:px-10 md:px-10"
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
             >
-                <div className="relative z-10 flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 text-white max-w-xl">
-                    <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4"
+                <div className="relative z-10 w-300px flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 text-white max-w-xl">
+                    <h2 className="text-4xl tracking-wide md:text-5xl font-bold leading-tight mb-4"
                         style={{
                             fontFamily: "Manrope"
                         }}>
                         {title}
                     </h2>
-                    <p className="text-lg md:text-xl opacity-90 mb-6" style={{
+                    <p className="text-lg md:text-2xl tracking-wider opacity-90 mb-6" style={{
                         fontFamily: "Inter"
                     }}>
                         {subtitle}

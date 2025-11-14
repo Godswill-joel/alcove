@@ -13,7 +13,7 @@ export default function Hero() {
         <section className="h-screen py-24 px-12">
 
             {/* Content Wrapper */}
-            <div className="relative h-full inset-0 z-10 flex flex-col justify-center px-6 sm:px-10 md:px-20 text-white"
+            <div className="relative rounded-xl h-full inset-0 z-10 flex flex-col justify-center px-6 sm:px-10 md:px-20 text-white"
                 style={{
                     backgroundImage: `url(${Background})`,
                     backgroundSize: 'cover',

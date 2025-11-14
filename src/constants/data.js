@@ -82,6 +82,25 @@ export const apartments = [
     },
 ];
 
+export const values = [
+    {
+        title: "Trust",
+        description: "We ensure every listing meets alcove’s quality standards.",
+    },
+    {
+        title: "Comfort",
+        description: "Every detail is designed for a home-like experience.",
+    },
+    {
+        title: "Excellence",
+        description: "From service to design, we aim for perfection.",
+    },
+    {
+        title: "Innovation",
+        description:
+            "Constantly improving how guests discover and enjoy shortlets.",
+    },
+];
 
 
 export const features = [
@@ -139,7 +158,7 @@ export const testimonials = [
         id: "t3",
         name: "Tobi Alade",
         location: "Port Harcourt, Nigeria",
-        avatar:testomony3,
+        avatar: testomony3,
         rating: 5,
         text:
             "I’ve used many shortlet platforms, but Alcove stands out for its quality and reliability. Great experience from start to finish.",
@@ -148,7 +167,7 @@ export const testimonials = [
         id: "t4",
         name: "Simi O",
         location: "Lagos, Nigeria",
-        avatar:testomony4,
+        avatar: testomony4,
         rating: 5,
         text:
             "Fantastic host experience. The apartment was fully stocked and the support team was responsive. Highly recommended.",
