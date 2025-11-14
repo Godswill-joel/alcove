@@ -2,17 +2,19 @@ import about from "../../../public/img/About.png";
 import CallToAction from "../../components/CallAction";
 import Testimonials from "../../components/home/Testimony";
 import Apartmenthero from "../../components/apartment/Apartmenthero";
+import Features from "../../components/apartment/Features";
 
 export default function Apartment() {
     return (
         <div>
            <Apartmenthero />
+           <Features />
             <Testimonials />
             <CallToAction
                 backgroundImage={about}
-                title="Ready to Experience Alcove?"
-                subtitle="Find your next shortlet in minutes"
-                buttonText="Explore Apartments"
+                title="Can’t decide? Let us help you find your perfect stay"
+                subtitle="Book a premium shortlet with Alcove today"
+                buttonText="Chat with Us"
                 onButtonClick={() => console.log("Booking...")}
             />
         </div>

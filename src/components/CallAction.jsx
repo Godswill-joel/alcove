@@ -18,14 +18,14 @@ export default function CallToAction({
                     backgroundPosition: 'center'
                 }}
             >
-                <div className="relative z-10 w-300px flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 text-white max-w-xl">
-                    <h2 className="text-4xl tracking-wide md:text-5xl font-bold leading-tight mb-4"
+                <div className="relative z-10 w-250px flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 text-white ">
+                    <h2 className="text-4xl tracking-wide md:text-5xl font-bold leading-tight mb-4 max-w-3xl"
                         style={{
                             fontFamily: "Manrope"
                         }}>
                         {title}
                     </h2>
-                    <p className="text-lg md:text-2xl tracking-wider opacity-90 mb-6" style={{
+                    <p className="text-lg md:text-2xl tracking-wider opacity-90 mb-6 max-w-sm" style={{
                         fontFamily: "Inter"
                     }}>
                         {subtitle}
@@ -37,7 +37,7 @@ export default function CallToAction({
             <div className="absolute left-24  bottom-16 z-10">
                 <button
                     onClick={onButtonClick}
-                    className="px-10 py-4  hover:bg-[#0B1C33CC] text-white font-semibold text-lg rounded-full transition-all"
+                    className="px-10 py-4  hover:bg-[#0B1C33CC] text-white font-semibold text-xl rounded-full transition-all"
                     style={{
                         backgroundColor: "#0B1C33",
                         width: "380px",

@@ -21,8 +21,7 @@ export default function Testimonials() {
     }, []);
 
     const total = testimonials.length;
-
-    // helper to get visible slice (wraps if needed)
+    
     function getVisible() {
         if (startIndex + perPage <= total) {
             return testimonials.slice(startIndex, startIndex + perPage);

@@ -166,7 +166,7 @@ export const testimonials = [
     {
         id: "t4",
         name: "Simi O",
-        location: "Lagos, Nigeria",
+        location: "Port Harcourt, Nigeria",
         avatar: testomony4,
         rating: 5,
         text:
@@ -175,7 +175,7 @@ export const testimonials = [
     {
         id: "t5",
         name: "Michael K",
-        location: "Abuja, Nigeria",
+        location: "Port Harcourt, Nigeria",
         avatar: testomony5,
         rating: 5,
         text:
@@ -184,20 +184,32 @@ export const testimonials = [
     {
         id: "t6",
         name: "Amaka R",
-        location: "Enugu, Nigeria",
+        location: "Port Harcourt, Nigeria",
         avatar: testomony6,
         rating: 5,
         text:
             "Perfect place for a weekend getaway. Clean, comfortable, and exactly as pictured. We’ll be back!",
     },
-    // {
-    //     id: "t7",
-    //     name: "Daniel N",
-    //     location: "Ibadan, Nigeria",
-    //     avatar: "/avatars/user7.jpg",
-    //     rating: 5,
-    //     text:
-    //         "Professional service and great attention to details. I appreciated the quick check-in and tidy space.",
-    // },
+];
+
+export const steps = [
+    {
+        id: 1,
+        title: "Search Apartments",
+        description:
+            "Browse a wide range of verified shortlet apartments in top cities. Filter by location, price, and amenities to find the perfect stay that fits your style.",
+    },
+    {
+        id: 2,
+        title: "Book Securely",
+        description:
+            "Once you’ve found your match, book instantly through our safe and transparent platform. Your payment and personal details are fully protected every step of the way.",
+    },
+    {
+        id: 3,
+        title: "Enjoy Your Stay",
+        description:
+            "Check in, relax, and make yourself at home. Every Alcove apartment is designed for comfort, convenience, and peace of mind.",
+    },
 ];
 
