@@ -1,22 +1,20 @@
 import React from "react";
-import Hero from "../../../public/img/Contacthero.png";
-import Heromobile from "../../../public/img/contactheromobile.jpg";
-import whatsappicon from "../../../public/Logo/Whatsapp.png";
 
 export default function ContactHero() {
     return (
         <section className="relative h-[90vh] sm:h-screen py-20 px-4 sm:px-8 md:px-12">
             <div className="relative rounded-xl inset-0 h-full z-10 flex flex-col justify-center px-4 sm:px-10 md:px-10">
                 <div
-                    className="absolute inset-0 bg-cover bg-center md:hidden"
-                    style={{
-                        backgroundImage: `url(${Heromobile})`,
-                    }}
-                />
-                <div
                     className="absolute inset-0 bg-cover bg-center hidden md:block"
                     style={{
-                        backgroundImage: `url(${Hero})`,
+                        backgroundImage: 'url("/img/contacthero.png")',
+                    }}
+                />
+
+                <div
+                    className="absolute inset-0 bg-cover bg-center md:hidden"
+                    style={{
+                        backgroundImage: 'url("/img/contactheromobile.jpg")',
                     }}
                 />
 
@@ -65,7 +63,7 @@ export default function ContactHero() {
                     }}
                 >
                     <img
-                        src={whatsappicon}
+                        src="/Logo/Whatsapp.png"
                         alt="contact icon"
                         className="w-8 h-8 sm:w-10 sm:h-10"
                     />
