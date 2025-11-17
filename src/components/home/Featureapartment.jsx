@@ -15,74 +15,79 @@ const FeaturedApartments = ({ limit }) => {
 
     return (
         <section className="py-10 px-4 md:px-12 bg-white">
-            {/* Title */}
-            <div className="flex w-full px-7 items-center justify-between mb-8">
+            {/* Title Section */}
+            <div className="flex flex-col md:flex-row w-full px-7 items-start md:items-center justify-between mb-8">
                 <div>
                     <h2
-                        className="text-5xl tracking-wide font-bold text-[#0B1C33]"
+                        className="text-4xl md:text-5xl tracking-wide font-bold text-[#0B1C33]"
                         style={{ fontFamily: "Manrope" }}
                     >
                         Featured Apartments
                     </h2>
 
                     <p
-                        className="text-[#000000] text-xl tracking-wide mt-1"
+                        className="text-[#000000] text-lg md:text-xl tracking-wide mt-1"
                         style={{ fontFamily: "inter" }}
                     >
                         Explore Our Premium Spaces
                     </p>
                 </div>
-
                 <Link
                     to="/apartments"
-                    className="text-[#0B1C33] text-5xl font-medium hover:underline"
+                    className="text-[#0B1C33] text-3xl md:text-5xl font-medium hover:underline mt-4 md:mt-0"
                     style={{ fontFamily: "Manrope" }}
                 >
                     See all
                 </Link>
             </div>
 
-            {/* Grid */}
+           
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
                 {displayedApts.map((apt) => (
                     <div
                         key={apt.id}
-                        className="bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between mx-auto relative"
-                        style={{
-                            width: "537.16px",
-                            height: "522.82px",
-                        }}
+                        className="
+                            bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden 
+                            flex flex-col justify-between mx-auto relative
+                            w-full h-auto
+                            lg:w-[537.16px] lg:h-[522.82px]
+                        "
                     >
-                        {/* Apartment Image */}
                         <div>
                             <div className="relative">
                                 <img
                                     src={apt.image}
                                     alt={apt.title}
-                                    className="w-full h-[260px] object-cover rounded-t-2xl"
+                                    className="
+                                        w-full h-[230px] sm:h-[240px] md:h-[260px] 
+                                        object-cover rounded-t-2xl
+                                    "
                                 />
 
                                 {apt.available && (
-                                    <span className="absolute right-3 text-[#000000] text-sm font-semibold flex items-center gap-1 px-2 py-1 rounded-lg bg-white/80 backdrop-blur-sm">
+                                    <span className="absolute right-3 text-[#000000] text-sm font-semibold flex items-center gap-1 px-2 py-1 rounded-lg  backdrop-blur-sm">
                                         Available
                                         <img src={Available} alt="available icon" className="w-4 h-4" />
                                     </span>
                                 )}
                             </div>
 
-                           
-                            <div className="px-7 py-2 flex flex-col justify-between h-[calc(522.82px-260px)] w-full">
+                            <div className="
+                                px-5 md:px-7 py-2 flex flex-col justify-between 
+                                w-full
+                                h-auto lg:h-[calc(522.82px-260px)]
+                            ">
                                 <div>
                                     <h3 className="text-lg font-semibold text-[#0B1C33]">
                                         {apt.title}
                                     </h3>
 
-                                    <div className="flex items-center gap-2 mt-8 text-[#000]">
+                                    <div className="flex items-center gap-2 mt-5 text-[#000]">
                                         <img src={Location} alt="location icon" className="w-4 h-4" />
                                         <p className="text-sm">{apt.location}</p>
                                     </div>
 
-                                    <div className="flex items-center justify-between mt-12 text-[#000] text-sm">
+                                    <div className="flex items-center justify-between mt-8 md:mt-12 text-[#000] text-sm">
                                         <div className="flex items-center gap-1">
                                             <img src={Bedroom} className="w-4 h-4" alt="bedroom" />
                                             <span>{apt.beds} Bedroom</span>
@@ -106,13 +111,17 @@ const FeaturedApartments = ({ limit }) => {
                             </div>
                         </div>
 
-                        <div className="absolute bottom-5 right-5">
-                            <Link>
-                                <button className="bg-[#0B1C33] text-white p-3 rounded-full hover:bg-[#1B2C43] transition">
-                                    <ArrowUpRight size={20} />
-                                </button>
-                            </Link>
-                        </div>
+                        <Link
+                            to="/apartments"
+                            className="
+                                       absolute
+                                       bottom-2 right-2 sm:bottom-5 sm:right-5
+                                       bg-[#0B1C33] text-white p-3 rounded-full 
+                                       hover:bg-[#1B2C43] transition
+                                     "
+                        >
+                            <ArrowUpRight size={20} />
+                        </Link>
                     </div>
                 ))}
             </div>
@@ -121,104 +130,3 @@ const FeaturedApartments = ({ limit }) => {
 };
 
 export default FeaturedApartments;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import { ArrowUpRight } from "lucide-react";
-// import Bedroom from "../../../public/assets/Bedroom.png"
-// import Bathroom from "../../../public/assets/Bathroom.png"
-// import Guests from "../../../public/assets/Guests.png"
-// import Location from "../../../public/assets/Location.png"
-// import Available from "../../../public/assets/Available.png"
-// import { apartments } from "../../constants/data";
-
-// const FeaturedApartments = ({ limit }) => {
-
-//     const displayedApts = limit ? apartments.slice(0, limit) : apartments;
-
-//     return (
-//         <section className="py-10 px-4 md:px-12 bg-white">
-//             <div className="flex w-full px-7 items-center justify-between mb-8">
-//                 <div>
-//                     <h2 className="text-5xl tracking-wide font-bold text-[#0B1C33]" style={{
-//                         fontFamily: "Manrope",
-//                     }}>Featured Apartments</h2>
-//                     <p className="text-[#000000] text-xl tracking-wide mt-1"
-//                         style={{
-//                             fontFamily: "inter",
-//                         }}>Explore Our Premium Spaces</p>
-//                 </div>
-//                 <Link href="/apartments" className="text-[#0B1C33] text-5xl  font-medium hover:underline" style={{
-//                     fontFamily: "Manrope",
-//                 }}>
-//                     See all
-//                 </Link>
-//             </div>
-
-//             {/* Grid */}
-//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-//                 {displayedApts.map((apt) => (
-//                     <div
-//                         key={apt.id}
-//                         className="bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between mx-auto"
-//                         style={{
-//                             width: "537.16px",
-//                             height: "522.82px",
-//                         }}
-//                     >
-//                         <div>
-//                             <div className="relative">
-//                                 <img
-//                                     src={apt.image}
-//                                     alt={apt.title}
-//                                     className="w-full h-[260px] object-cover rounded-t-2xl"
-//                                 />
-//                                 {apt.available && (
-//                                     <span className="absolute right-3  text-[#000000] text-sm font-semibold flex items-center gap-1  px-2 py-3 rounded-lg">
-//                                         Available
-//                                         <img src={Available} alt="available icon" className="w-4 h-4" />
-//                                     </span>
-//                                 )}
-//                             </div>
-//                             <div className="px-7 py-2 flex flex-col justify-between h-[calc(532.82px-260px)] w-full">
-//                                 <div>
-//                                     <h3 className="text-lg font-semibold text-[#0B1C33]">{apt.title}</h3>
-
-//                                     <div className="flex items-center gap-2 text-[#00000] mt-8">
-//                                         <img src={Location} alt={apt.location} className="w-4 h-4" />
-//                                         <p className="text-sm">{apt.location}</p>
-//                                     </div>
-
-//                                     <div className="flex items-center justify-between mt-12  text-[#000000] text-sm">
-//                                         <div className="flex items-center gap-1">
-//                                             <img src={Bedroom} alt="bedroom icon" className="w-4 h-4" />
-//                                             <span>{apt.beds} Bedroom</span>
-//                                         </div>
-//                                         <div className="flex items-center gap-1">
-//                                             <img src={Bathroom} alt="bathroom icon" className="w-4 h-4" />
-//                                             <span>{apt.baths} Bathroom</span>
-//                                         </div>
-//                                         <div className="flex items-center gap-1">
-//                                             <img src={Guests} alt="guests icon" className="w-4 h-4" />
-//                                             <span>{apt.guests} Guests</span>
-//                                         </div>
-//                                     </div>
-//                                 </div>
-
-//                                 <p className="text-xl font-bold text-[#0B1C33] mt-4 mb-8">{apt.price}</p>
-//                             </div>
-//                         </div>
-//                     </div>
-
-//                 ))}
-//                 <div className="flex justify-end px-5 pb-5">
-//                     <button className="bg-[#0B1C33] text-white p-3 rounded-full hover:bg-[#1B2C43] transition">
-//                         <ArrowUpRight size={20} />
-//                     </button>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default FeaturedApartments;
