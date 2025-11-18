@@ -58,7 +58,7 @@ export default function ContactSection() {
       <div className="flex flex-col md:flex-row justify-between w-full gap-16">
 
         <div className="w-full md:w-2/3">
-          
+
           <h2
             className="text-3xl md:text-5xl font-bold text-[#333333] mb-4"
             style={{ fontFamily: "Manrope" }}
@@ -85,7 +85,7 @@ export default function ContactSection() {
             onSubmit={handleSubmit}
             className="p-6 space-y-5 shadow-sm max-w-xl"
           >
-           
+
             <div>
               <label className="block text-sm font-semibold mb-1">Full name</label>
               <input
@@ -99,7 +99,7 @@ export default function ContactSection() {
               />
             </div>
 
-            
+
             <div>
               <label className="block text-sm font-semibold mb-1">Email Address</label>
               <input
@@ -155,13 +155,15 @@ export default function ContactSection() {
                 required
               />
             </div>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                className="bg-[#0B1C33] text-white font-medium rounded-2xl py-3 px-6 hover:bg-gray-800 transition-all"
+              >
+                Send message
+              </button>
+            </div>
           </form>
-          <button
-            type="submit"
-            className=" bg-[#0B1C33] text-white font-medium rounded-2xl py-3 px-3 item-center mt-2 hover:bg-gray-800 transition-all"
-          >
-            Send message
-          </button>
         </div>
 
         <div className="w-full md:w-1/3 flex flex-col items-start md:items-end gap-8">

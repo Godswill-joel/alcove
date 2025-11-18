@@ -50,7 +50,7 @@ const FeaturedApartments = ({ limit }) => {
                             bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden 
                             flex flex-col justify-between mx-auto relative
                             w-full h-auto
-                            lg:w-[537.16px] lg:h-[522.82px]
+                            lg:w-[527.16px] lg:h-[522.82px]
                         "
                     >
                         <div>
@@ -65,7 +65,7 @@ const FeaturedApartments = ({ limit }) => {
                                 />
 
                                 {apt.available && (
-                                    <span className="absolute right-3 text-[#000000] text-sm font-semibold flex items-center gap-1 px-2 py-1 rounded-lg  backdrop-blur-sm">
+                                    <span className="absolute right-3 text-[#000000] text-sm font-semibold flex items-center gap-1 px-2 py-3 rounded-lg  backdrop-blur-sm">
                                         Available
                                         <img src={Available} alt="available icon" className="w-4 h-4" />
                                     </span>

@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ContactHero() {
+export default function AboutHero() {
     return (
         <section className="relative h-[90vh] sm:h-screen py-20 px-4 sm:px-8 md:px-12">
             <div className="relative rounded-xl inset-0 h-full z-10 flex flex-col justify-center px-4 sm:px-10 md:px-10">
                 <div
                     className="absolute inset-0 bg-cover bg-center hidden md:block"
                     style={{
-                        backgroundImage: 'url("/img/contacthero.png")',
+                        backgroundImage: 'url("/img/Aboutbg.png")',
                     }}
                 />
 
@@ -18,20 +19,19 @@ export default function ContactHero() {
                     }}
                 />
 
-                {/* Text Wrapper */}
-                <div className="relative z-10 max-w-full sm:max-w-[500px] flex flex-col justify-center h-full px-1 sm:px-8 md:px-20 text-white">
+                <div className="relative z-10 max-w-full sm:max-w-[550px] flex flex-col justify-center h-full px-1 sm:px-8 md:px-20 text-white">
                     <h2
                         className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-wide mb-4"
                         style={{ fontFamily: "Manrope" }}
                     >
-                        We’re Here to Help
+                        Redefining Shortlet Living
                     </h2>
 
                     <p
-                        className="text-sm sm:text-lg md:text-2xl tracking-wider opacity-90 mb-6 max-w-[240px] sm:max-w-[350px]"
+                        className="text-sm sm:text-2xl md:text-2xl tracking-wider opacity-90 mb-6 max-w-[240px] sm:max-w-[450px]"
                         style={{ fontFamily: "Inter" }}
                     >
-                        Questions, bookings, partnerships reach out anytime.
+                        Alcove is where comfort, convenience, and modern design meet giving you premium stays that feel like home.
                     </p>
                 </div>
 
@@ -46,10 +46,11 @@ export default function ContactHero() {
     z-10
   "
             >
-                <button
+                <Link to="/contact"
+
                     className="
       flex items-center justify-center gap-3
-      px-10 py-4
+      px-15 py-4
       text-white font-semibold
       text-lg sm:text-xl md:text-lg  
       transition-all
@@ -57,19 +58,15 @@ export default function ContactHero() {
     "
                     style={{
                         backgroundColor: "#0B1C33",
-                        width: "300px",    // ← EXACT desktop value
-                        height: "70px",    // ← EXACT desktop value
+                        width: "300px",
+                        height: "70px",
                         borderRadius: "60px",
                     }}
                 >
-                    <img
-                        src="/Logo/Whatsapp.png"
-                        alt="contact icon"
-                        className="w-8 h-8 sm:w-10 sm:h-10"
-                    />
-                    <span className="text-xl sm:text-2xl">Start chat</span>
-                </button>
+                    <span className="text-xl sm:text-2xl">Explore Apartments</span>
+                </Link>
             </div>
+
 
         </section>
     );
