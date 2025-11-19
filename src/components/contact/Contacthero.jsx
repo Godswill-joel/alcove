@@ -17,8 +17,6 @@ export default function ContactHero() {
                         backgroundImage: 'url("/img/contactheromobile.jpg")',
                     }}
                 />
-
-                {/* Text Wrapper */}
                 <div className="relative z-10 max-w-full sm:max-w-[500px] flex flex-col justify-center h-full px-1 sm:px-8 md:px-20 text-white">
                     <h2
                         className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-wide mb-4"
@@ -57,8 +55,8 @@ export default function ContactHero() {
     "
                     style={{
                         backgroundColor: "#0B1C33",
-                        width: "300px",    // ← EXACT desktop value
-                        height: "70px",    // ← EXACT desktop value
+                        width: "300px",    
+                        height: "70px",   
                         borderRadius: "60px",
                     }}
                 >

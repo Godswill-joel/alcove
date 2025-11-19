@@ -1,5 +1,5 @@
 import React from "react";
-import StoryImage from "../../../public/img/Mission.png";
+import StoryImage from "../../../public/img/Mission.webp";
 
 export default function OurMission() {
     return (
@@ -45,6 +45,7 @@ export default function OurMission() {
                         <img
                             src={StoryImage}
                             alt="Our story"
+                            loading="lazy"
                             className="object-cover w-full h-[75vh]"
                             style={{ display: "block" }}
                         />

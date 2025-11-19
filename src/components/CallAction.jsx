@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import backgroundImg from "../../public/img/Callto.png";
-import backgroundImgMobile from "../../public/img/calltomobile.jpg";
+import backgroundImg from "../../public/img/Callto.webp";
+import backgroundImgMobile from "../../public/img/calltomobile.webp";
+import { Link } from "react-router-dom";
 
 export default function CallToAction({
     backgroundImage = backgroundImg,
@@ -29,6 +30,7 @@ export default function CallToAction({
                     bg-cover bg-center py-24 px-12
                 "
                 style={{ backgroundImage: `url(${bgImage})` }}
+                loading="lazy"
             />
             <div
                 className="relative rounded-xl
@@ -48,35 +50,21 @@ export default function CallToAction({
                     >
                         {title}
                     </h2>
-
-                    <p
-                        className="
-                            text-lg 
-                            md:text-2xl 
-                            tracking-wider 
-                            opacity-90 
-                            mb-6 
-                            max-w-sm
-                        "
-                        style={{ fontFamily: "Inter" }}
-                    >
+                    <p className="text-lg md:text-2xl tracking-wider opacity-90 mb-6  max-w-sm" style={{ fontFamily: "Inter" }}>
                         {subtitle}
                     </p>
                 </div>
             </div>
 
             <div className="absolute left-1/2 transform -translate-x-1/2 bottom-12 sm:left-16 sm:translate-x-0 sm:bottom-14 md:left-24 md:bottom-16 z-10 ">
-                <button onClick={onButtonClick}
-                    className=" hover:bg-[#0B1C33CC] text-white font-semibold text-lg md:text-xl rounded-full transition-all"
-                    style={{
-                        backgroundColor: "#0B1C33",
-                        width: isMobile ? "260px" : "380px",
-                        height: isMobile ? "60px" : "80px",
-                        borderRadius: "60px",
-                    }}
+
+                <Link
+                    to="/apartments"
+                    onClick={onButtonClick}
+                    className="inline-flex items-center justify-center text-white font-bold bg-[#0B1C33] hover:bg-[#0B1C33CC] transition-all w-[300px] h-[70px] rounded-[60px]"
                 >
                     {buttonText}
-                </button>
+                </Link>
             </div>
         </section>
     );

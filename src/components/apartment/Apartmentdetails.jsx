@@ -3,7 +3,7 @@ import { apartmentDetails } from "../../constants/data";
 import { ArrowLeft, MapPin, Share2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Testimonials from "../home/Testimony";
-import Hero from "../../../public/img/calltomobile.jpg";
+import Hero from "../../../public/img/calltomobile.webp";
 import WatchVideoIcon from "../../../public/img/watchvideo.png";
 
 export default function ApartmentDetails() {

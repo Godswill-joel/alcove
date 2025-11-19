@@ -1,6 +1,7 @@
 import { useState } from "react";
 import background from "../../../public/img/apartmentbg.png";
-import SearchIcon from "../../../public/img/Vector.png";
+import SearchIcon from "../../../public/img/Vector.webp";
+import { Link } from "react-router-dom";
 
 export default function Apartmenthero() {
     const [min, setMin] = useState(50000);
@@ -11,8 +12,6 @@ export default function Apartmenthero() {
 
     return (
         <section className="relative h-screen px-4 sm:px-8 md:px-12 py-16 md:py-24">
-
-            {/* BACKGROUND + CONTENT */}
             <div
                 className="
                     relative rounded-xl h-full inset-0 z-10 flex flex-col justify-center
@@ -23,8 +22,8 @@ export default function Apartmenthero() {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
+                loading="lazy"
             >
-                {/* TEXT */}
                 <div className="max-w-2xl">
                     <h1
                         className="mt-10 font-semibold
@@ -162,17 +161,12 @@ export default function Apartmenthero() {
                 -translate-x-1/2 lg:translate-x-0
                 z-10
             ">
-                <button
-                    className="text-white font-bold hover:bg-[#0B1C33CC] transition-all"
-                    style={{
-                        backgroundColor: "#0B1C33",
-                        width: "300px",
-                        height: "70px",
-                        borderRadius: "60px",
-                    }}
+                 <Link
+                    to="/contact"
+                    className="inline-flex items-center justify-center text-white font-bold bg-[#0B1C33] hover:bg-[#0B1C33CC] transition-all w-[300px] h-[70px] rounded-[60px]"
                 >
-                    Book Now
-                </button>
+                   Book Now
+                </Link>
             </div>
         </section>
     );

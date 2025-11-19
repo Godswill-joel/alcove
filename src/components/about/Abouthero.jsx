@@ -8,15 +8,17 @@ export default function AboutHero() {
                 <div
                     className="absolute inset-0 bg-cover bg-center hidden md:block"
                     style={{
-                        backgroundImage: 'url("/img/Aboutbg.png")',
+                        backgroundImage: 'url("/img/Aboutbg.webp")',
                     }}
+                    loading="lazy"
                 />
 
                 <div
                     className="absolute inset-0 bg-cover bg-center md:hidden"
                     style={{
-                        backgroundImage: 'url("/img/contactheromobile.jpg")',
+                        backgroundImage: 'url("/img/Aboutmobile.webp")',
                     }}
+                    loading="lazy"
                 />
 
                 <div className="relative z-10 max-w-full sm:max-w-[550px] flex flex-col justify-center h-full px-1 sm:px-8 md:px-20 text-white">
@@ -46,7 +48,7 @@ export default function AboutHero() {
     z-10
   "
             >
-                <Link to="/contact"
+                <Link to="/apartments"
 
                     className="
       flex items-center justify-center gap-3
