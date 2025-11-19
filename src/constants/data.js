@@ -402,6 +402,80 @@ export const apartmentDetails = {
             image: "/assets/premium.png",
         },
     ],
+    // id: 2,
+    // title: "2 Bedroom Apartment",
+    // price: "₦200,000/night",
+    // images: [
+    //     "/assets/apt1.png",
+    // ],
+
+    // location: [
+    //     "Port Harcourt, Nigeria"
+    // ],
+
+    // keyAmenities: [
+    //     { label: "Air Conditioning", img: ac },
+    //     { label: "247 power supply", img: light },
+    //     { label: "Secure Parking", img: security },
+    //     { label: "Smart TV & Netflix", img: Tv },
+    //     { label: "Wardrobe & Storage Space", img: Wardrope },
+    //     { label: "Access-Controlled Gate", img: Gate },
+    // ],
+
+    // apartmentOffers: [
+    //     "Fully Furnished Apartment",
+    //     "24/7 Power Supply",
+    //     "High Speed Internet",
+    //     "Smart TV With Netflix",
+    //     "Daily Cleaning On Request",
+    // ],
+
+    // shoppingArrangements: [
+    //     "Groceries Provided On Request",
+    //     "Chef Available On Request",
+    // ],
+
+    // houseRules: [
+    //     "No smoking inside the apartment",
+    //     "No loud music after 10PM",
+    //     "No parties allowed",
+    // ],
+
+    // reviews: [
+    //     {
+    //         id: 1,
+    //         name: "James Noah",
+    //         rating: 5,
+    //         comment: "Amazing apartment — clean, comfortable and secure!",
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "Olaide Benson",
+    //         rating: 4,
+    //         comment: "Loved the interior and quiet environment.",
+    //     },
+    // ],
+
+    // relatedRooms: [
+    //     {
+    //         id: 11,
+    //         title: "Mini Studio",
+    //         price: "₦45,000/night",
+    //         image: "/assets/mini.png",
+    //     },
+    //     {
+    //         id: 12,
+    //         title: "Luxury 2 Bedroom",
+    //         price: "₦80,000/night",
+    //         image: "/assets/lux2.png",
+    //     },
+    //     {
+    //         id: 13,
+    //         title: "1 Bedroom Premium",
+    //         price: "₦60,000/night",
+    //         image: "/assets/premium.png",
+    //     },
+    // ],
 };
 
 

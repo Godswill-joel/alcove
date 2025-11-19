@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Email from "../../../public/Logo/Email.png";
 import Phonecontact from "../../../public/Logo/Phone.png";
-import Whatsapp from "../../../public/Logo/Whatsapp.png";
+import Whatsapp from "../../../public/Logo/Whatsapp.webp";
 import Location from "../../../public/Logo/Location.png";
 
 const socialLinks = [
@@ -36,7 +36,7 @@ export default function ContactSection() {
     message: "",
   });
 
-  const whatsappNumber = "2349049375954";
+  const whatsappNumber = "2348062992614";
 
   const handleChange = (e) => {
     const { name, value } = e.target;

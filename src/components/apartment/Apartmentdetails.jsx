@@ -1,8 +1,8 @@
 import React from "react";
+import Testimonials from "../home/Testimony";
+import { Link, useNavigate } from "react-router-dom";
 import { apartmentDetails } from "../../constants/data";
 import { ArrowLeft, MapPin, Share2 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import Testimonials from "../home/Testimony";
 import Hero from "../../../public/img/calltomobile.webp";
 import WatchVideoIcon from "../../../public/img/watchvideo.png";
 
@@ -41,7 +41,7 @@ export default function ApartmentDetails() {
                 </div>
             </div>
 
-            {/* SLIDER DOTS */}
+            {/* SLIDER DOTS
             <div className="flex justify-center mt-4 gap-2">
                 {[1, 2, 3, 4, 5].map((dot, index) => (
                     <div
@@ -50,9 +50,7 @@ export default function ApartmentDetails() {
                             }`}
                     />
                 ))}
-            </div>
-
-            {/* LOCATION + AVAILABILITY */}
+            </div> */}
             <div className="flex justify-between items-center mt-4 px-1">
                 <div className="flex items-center gap-2 text-gray-600">
                     <MapPin size={18} />
@@ -69,9 +67,9 @@ export default function ApartmentDetails() {
                     <p className="text-[#0B1C33] font-semibold mt-2">{apt.price}</p>
                 </div>
 
-                <button className="px-6 py-4 bg-[#0B1C33] text-white rounded-xl">
+                <Link to="/contact" className="px-6 py-4 bg-[#0B1C33] text-white rounded-xl">
                     Book Now
-                </button>
+                </Link>
             </div>
             <div className="mt-10">
                 <h3 className="font-bold text-xl">Key Amenities List</h3>
@@ -115,12 +113,6 @@ export default function ApartmentDetails() {
                         <li key={i}>• {item}</li>
                     ))}
                 </ul>
-            </div>
-            <div className="mt-10">
-                <h3 className="font-bold text-xl">Check-in / Check-out</h3>
-
-                <p className="mt-2">Check-in: {apt.checkinCheckout.checkin}</p>
-                <p>Check-out: {apt.checkinCheckout.checkout}</p>
             </div>
             <div className="w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden mt-16">
                 <iframe

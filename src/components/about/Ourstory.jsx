@@ -1,5 +1,5 @@
 import React from "react";
-import StoryImage from "../../../public/img/Story.png";
+import StoryImage from "../../../public/img/Story.webp";
 
 export default function OurStory() {
     return (

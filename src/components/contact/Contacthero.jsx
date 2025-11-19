@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ContactHero() {
+    const whatsappNumber = "+2348062992614";
+
     return (
         <section className="relative h-[90vh] sm:h-screen py-20 px-4 sm:px-8 md:px-12">
             <div className="relative rounded-xl inset-0 h-full z-10 flex flex-col justify-center px-4 sm:px-10 md:px-10">
@@ -44,14 +47,10 @@ export default function ContactHero() {
     z-10
   "
             >
-                import {Link} from "react-router-dom";
-
-                const whatsappNumber = "2348038771226";
-
                 <Link
                     to="#"
                     onClick={(e) => {
-                        e.preventDefault(); // prevents React Router navigation
+                        e.preventDefault(); 
                         const text = encodeURIComponent("Hello! I would like to start a chat.");
                         window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
                     }}

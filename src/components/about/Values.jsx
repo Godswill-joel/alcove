@@ -1,6 +1,6 @@
 import React from "react";
 import { values } from "../../constants/data";
-import ValuesImage from "../../../public/img/values.png";
+import ValuesImage from "../../../public/img/values.webp";
 
 export default function OurValues() {
 
