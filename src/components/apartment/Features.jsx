@@ -62,7 +62,7 @@ export default function Features() {
         {displayedApts.map((apt) => (
           <div
             key={apt.id}
-            className="bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 relative flex flex-col w-full md:w-[480.16px] md:h-[522.82px]">
+            className="bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 relative flex flex-col w-full md:w-[450.16px] md:h-[522.82px]">
             <div className="relative">
               <img
                 src={apt.image}

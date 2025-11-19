@@ -49,7 +49,7 @@ const FeaturedApartments = ({ limit }) => {
                             bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden 
                             flex flex-col justify-between mx-auto relative
                             w-full h-auto
-                            lg:w-[480.16px] lg:h-[522.82px]
+                            lg:w-[450.16px] lg:h-[522.82px]
                         "
                     >
                         <div>
