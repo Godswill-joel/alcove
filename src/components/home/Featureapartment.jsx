@@ -15,7 +15,6 @@ const FeaturedApartments = ({ limit }) => {
 
     return (
         <section className="py-10 px-4 md:px-12 bg-white">
-            {/* Title Section */}
             <div className="flex flex-col md:flex-row w-full px-7 items-start md:items-center justify-between mb-8">
                 <div>
                     <h2
@@ -50,7 +49,7 @@ const FeaturedApartments = ({ limit }) => {
                             bg-[#F5F5F6] rounded-2xl shadow-sm transition-all duration-300 overflow-hidden 
                             flex flex-col justify-between mx-auto relative
                             w-full h-auto
-                            lg:w-[527.16px] lg:h-[522.82px]
+                            lg:w-[522.16px] lg:h-[522.82px]
                         "
                     >
                         <div>

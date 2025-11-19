@@ -10,11 +10,10 @@ const linkColumns = [
     {
         title: "",
         links: [
-            { label: "Home", href: "/" },
-            { label: "About us", href: "/about" },
-            { label: "Apartments", href: "/apartments" },
-            { label: "Contact", href: "/contact" },
-            { label: "FAQs", href: "/faqs" },
+            { label: "Home", path: "/" },
+            { label: "About us", path: "/about" },
+            { label: "Apartments", path: "/apartments" },
+            { label: "Contact", path: "/contact" },
         ],
     },
     {
@@ -158,7 +157,7 @@ export default function Footer() {
                                     {col.links.map((link) => (
                                         <li key={link.label}>
                                             <Link
-                                                href={link.href}
+                                                to={link.path}
                                                 className="text-2xl sm:text-3xl text-slate-200 hover:text-white transition-colors tracking-wide"
                                                 style={{ fontFamily: "Manrope" }}
                                             >

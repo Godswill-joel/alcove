@@ -15,8 +15,6 @@ export default function Navbar() {
   return (
     <nav className="relative bg-white shadow-sm w-full z-50">
       <div className="w-full mx-auto px-4 md:px-10 lg:px-16 h-20 flex items-center justify-between">
-
-        {/* Logo */}
         <img
           src="/Logo/Frame 14.png"
           alt="Alcove Logo"
