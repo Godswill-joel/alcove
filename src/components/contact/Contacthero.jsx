@@ -44,29 +44,40 @@ export default function ContactHero() {
     z-10
   "
             >
-                <button
+                import {Link} from "react-router-dom";
+
+                const whatsappNumber = "2348038771226";
+
+                <Link
+                    to="#"
+                    onClick={(e) => {
+                        e.preventDefault(); // prevents React Router navigation
+                        const text = encodeURIComponent("Hello! I would like to start a chat.");
+                        window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+                    }}
                     className="
-      flex items-center justify-center gap-3
-      px-10 py-4
-      text-white font-semibold
-      text-lg sm:text-xl md:text-lg  
-      transition-all
-      hover:bg-[#0B1C33CC]
-    "
+    flex items-center justify-center gap-3
+    px-10 py-4
+    text-white font-semibold
+    text-lg sm:text-xl md:text-lg
+    transition-all
+    hover:bg-[#0B1C33CC]
+  "
                     style={{
                         backgroundColor: "#0B1C33",
-                        width: "300px",    
-                        height: "70px",   
+                        width: "300px",
+                        height: "70px",
                         borderRadius: "60px",
                     }}
                 >
                     <img
-                        src="/Logo/Whatsapp.png"
+                        src="/Logo/Whatsapp.webp"
                         alt="contact icon"
                         className="w-8 h-8 sm:w-10 sm:h-10"
                     />
                     <span className="text-xl sm:text-2xl">Start chat</span>
-                </button>
+                </Link>
+
             </div>
 
         </section>
