@@ -9,7 +9,7 @@ import { apartment } from "../../constants/data";
 import { Link } from "react-router-dom";
 
 const FILTERS = [
-  { id: "one", label: "One Bedroom", type: "1" },
+  { id: "one", label: "All", type: "1" },
   { id: "studio", label: "Studio Room", type: "studio" },
   { id: "two", label: "Two Bedroom", type: "2" },
   { id: "three", label: "Three Bedroom", type: "3" },

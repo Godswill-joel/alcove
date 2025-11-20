@@ -40,7 +40,7 @@ export default function WhyChoose() {
                                 {feat.title}
                             </h3>
                             <p
-                                className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed"
+                                className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed"
                                 style={{ fontFamily: "Inter" }}
                             >
                                 {feat.description}

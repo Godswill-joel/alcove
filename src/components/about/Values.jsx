@@ -26,7 +26,7 @@ export default function OurValues() {
           {values.map((value, index) => (
             <li key={index}>
               <p
-                className="text-lg md:text-5xl lg:text-4xl text-gray-700 leading-relaxed font-light"
+                className="text-lg md:text-3xl lg:text-3xl text-gray-700 leading-relaxed font-light"
                 style={{ fontFamily: "Inter" }}
               >
                 <span className="font-semibold text-3xl text-black tracking-wider ">{value.title}:</span>{" "}

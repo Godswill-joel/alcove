@@ -83,7 +83,7 @@ export default function Footer() {
                             />
                         </div>
 
-                        <p className="text-xl sm:text-2xl text-slate-300 mb-6 max-w-[18rem]">
+                        <p className="text-xl sm:text-xl text-slate-300 mb-6 max-w-[18rem]">
                             Discover premium shortlet apartments designed for comfort,
                             convenience, and modern living — wherever you go
                         </p>
@@ -93,7 +93,7 @@ export default function Footer() {
                             <div className="flex items-center gap-3 text-sm">
                                 <Link
                                     to="tel:+2348038771226"
-                                    className="flex items-center gap-2 text-xl sm:text-2xl text-slate-200 hover:underline"
+                                    className="flex items-center gap-2 text-xl sm:text-xl text-slate-200 hover:underline"
                                 >
                                     <Phone className="w-5 h-5" />
                                     +234 803 877 1226
@@ -125,7 +125,7 @@ export default function Footer() {
 
                                 <a
                                     href="mailto:support@thealcoveapartment.ng"
-                                    className="text-xl sm:text-2xl text-slate-200 hover:underline break-all"
+                                    className="text-xl sm:text-xl text-slate-200 hover:underline break-all"
                                 >
                                     support@thealcoveapartment.ng
                                 </a>
@@ -158,7 +158,7 @@ export default function Footer() {
                                         <li key={link.label}>
                                             <Link
                                                 to={link.path}
-                                                className="text-2xl sm:text-3xl text-slate-200 hover:text-white transition-colors tracking-wide"
+                                                className="text-2xl sm:text-2xl text-slate-200 hover:text-white transition-colors tracking-wide"
                                                 style={{ fontFamily: "Manrope" }}
                                             >
                                                 {link.label}

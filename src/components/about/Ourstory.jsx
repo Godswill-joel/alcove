@@ -19,7 +19,7 @@ export default function OurStory() {
                     Our Story
                 </h2>
                 <p
-                    className="text-lg md:text-5xl tracking-wider font-light text-gray-700 leading-relaxed mx-auto md:mx-0"
+                    className="text-lg md:text-3xl tracking-wider font-light text-gray-700 leading-relaxed mx-auto md:mx-0"
                     style={{ fontFamily: "Inter" }}
                 >
                     Born from a passion for modern living, Alcove was created to make

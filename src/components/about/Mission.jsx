@@ -14,7 +14,7 @@ export default function OurMission() {
                             Mission
                         </h3>
                         <p
-                            className="text-lg font-light tracking-wider  md:text-5xl text-gray-700 mb-10 leading-relaxed"
+                            className="text-lg font-light tracking-wider  md:text-3xl text-gray-700 mb-10 leading-relaxed"
                             style={{ fontFamily: "Inter, sans-serif" }}
                         >
                             To provide exceptional shortlet experiences through verified
@@ -27,7 +27,7 @@ export default function OurMission() {
                             Vision
                         </h3>
                         <p
-                            className="text-lg font-light tracking-wider md:text-5xl text-gray-700 mb-6 leading-relaxed"
+                            className="text-lg font-light tracking-wider md:text-3xl text-gray-700 mb-6 leading-relaxed"
                             style={{ fontFamily: "Inter, sans-serif" }}
                         >
                             To be Africa’s most reliable platform for modern, comfortable
