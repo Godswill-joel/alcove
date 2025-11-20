@@ -146,7 +146,7 @@ export default function Testimonials() {
                             <div className="text-4xl leading-none text-gray-800 mb-3">“</div>
 
                             <p 
-                                className="text-xl sm:text-2xl text-[#000000] leading-relaxed mb-6 flex-1" 
+                                className="text-xl sm:text-xl text-[#000000] leading-relaxed mb-6 flex-1" 
                                 style={{ fontFamily: "Manrope" }}
                             >
                                 {t.text}

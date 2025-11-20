@@ -56,7 +56,7 @@ export default function CallToAction({
                 </div>
             </div>
 
-            <div className="absolute left-1/2 transform -translate-x-1/2 bottom-12 sm:left-16 sm:translate-x-0 sm:bottom-14 md:left-24 md:bottom-16 z-10 ">
+            <div className="absolute left-1/2 transform -translate-x-1/2 bottom-12 sm:left-16 sm:translate-x-0 sm:bottom-14 md:left-24 md:bottom-10 z-10 ">
 
                 <Link
                     to="/apartments"
