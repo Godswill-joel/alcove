@@ -13,7 +13,6 @@ export default function OurMission() {
                         >
                             Mission
                         </h3>
-
                         <p
                             className="text-lg font-light tracking-wider  md:text-5xl text-gray-700 mb-10 leading-relaxed"
                             style={{ fontFamily: "Inter, sans-serif" }}
@@ -21,14 +20,12 @@ export default function OurMission() {
                             To provide exceptional shortlet experiences through verified
                             apartments, seamless booking, and trusted service
                         </p>
-
                         <h3
                             className="text-4xl md:text-7xl lg:text-8xl font-bold text-[#222] mb-6 mt-4"
                             style={{ fontFamily: "Manrope, sans-serif" }}
                         >
                             Vision
                         </h3>
-
                         <p
                             className="text-lg font-light tracking-wider md:text-5xl text-gray-700 mb-6 leading-relaxed"
                             style={{ fontFamily: "Inter, sans-serif" }}
@@ -38,7 +35,6 @@ export default function OurMission() {
                         </p>
                     </div>
                 </div>
-
                 <div className="order-1 md:order-2 w-full flex justify-center md:justify-end">
 
                     <div className="overflow-hidden rounded-2xl ">

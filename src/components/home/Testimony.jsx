@@ -10,9 +10,9 @@ export default function Testimonials() {
     useEffect(() => {
         function updatePerPage() {
             const w = window.innerWidth;
-            if (w < 640) setPerPage(1);           // mobile
-            else if (w < 1024) setPerPage(2);      // tablet
-            else setPerPage(3);                    // desktop (unchanged)
+            if (w < 640) setPerPage(1);           
+            else if (w < 1024) setPerPage(2);     
+            else setPerPage(3);                   
         }
         updatePerPage();
         window.addEventListener("resize", updatePerPage);
@@ -64,8 +64,6 @@ export default function Testimonials() {
     return (
         <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
             <div className="max-w-[1600px] mx-auto">
-
-                {/* Title + Controls */}
                 <div className="flex flex-wrap items-start justify-between mb-10 gap-4">
                     <div>
                         <h2 
@@ -82,8 +80,6 @@ export default function Testimonials() {
                             What Our Guests Are Saying
                         </p>
                     </div>
-
-                    {/* Controls */}
                     <div className="flex items-center space-x-2">
                         <button 
                             onClick={handlePrev}
@@ -102,8 +98,6 @@ export default function Testimonials() {
                         </button>
                     </div>
                 </div>
-
-                {/* Responsive Grid */}
                 <div
                     ref={containerRef}
                     tabIndex={-1}
@@ -118,13 +112,12 @@ export default function Testimonials() {
                             key={t.id}
                             className="bg-gray-100 rounded-xl shadow-sm p-10 flex flex-col"
                             style={{
-                                width: "100%",         // responsive
-                                maxWidth: "490px",     // preserve desktop design
-                                height: "547px",       // existing desktop height untouched
+                                width: "100%",         
+                                maxWidth: "490px",    
+                                height: "547px",       
                                 margin: "0 auto"
                             }}
                         >
-                            {/* Avatar + Rating */}
                             <div className="flex items-center justify-between mb-4">
                                 <img
                                     src={t.avatar}

@@ -19,8 +19,6 @@ export default function HowItWorks() {
                     Booking Made Easy
                 </p>
             </div>
-
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
                 {steps.map((step) => (
                     <div

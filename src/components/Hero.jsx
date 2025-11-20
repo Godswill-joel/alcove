@@ -56,11 +56,6 @@ export default function Hero() {
                         Redefining how you stay — premium comfort, modern design, and effortless booking
                     </p>
                 </div>
-
-                {/* ------------------------------------
-                    SEARCH BOX — Responsive
-                    (Centered on mobile, fixed on desktop)
-                ------------------------------------ */}
                 <div
                     className="
                         absolute 
@@ -76,7 +71,6 @@ export default function Hero() {
                         shadow-[0_8px_32px_rgba(0,0,0,0.25)]
                     "
                 >
-                    {/* Location */}
                     <div>
                         <label className="text-xs text-white/90 mb-1 block font-medium">Location</label>
                         <select className="w-full bg-white/10 border border-white/40 text-white rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-white/50 outline-none">
@@ -85,8 +79,6 @@ export default function Hero() {
                             <option className="text-black">Abuja</option>
                         </select>
                     </div>
-
-                    {/* Dates */}
                     <div className="grid grid-cols-2 gap-3">
                         <div>
                             <label className="text-xs text-white/90 mb-1 block font-medium">Check In</label>
@@ -120,8 +112,6 @@ export default function Hero() {
                                     right: `${100 - ((max - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100}%`,
                                 }}
                             ></div>
-
-                            {/* Min Input */}
                             <input
                                 type="range"
                                 min={MIN_LIMIT}
@@ -151,7 +141,7 @@ export default function Hero() {
                             <span>₦{max.toLocaleString()}</span>
                         </div>
                     </div>
-                    <button className="w-full bg-[#0A1A33]/90 hover:bg-[#132a54] transition text-white py-3 rounded-xl font-medium flex justify-between items-center text-sm shadow-lg">
+                    <button className="w-full bg-[#0A1A33]/90 hover:bg-[#132a54] transition text-white py-3 px-6 rounded-xl font-medium flex justify-between items-center text-sm shadow-lg">
                         Search
                         <img src={SearchIcon} alt="search" className="w-5" />
                     </button>

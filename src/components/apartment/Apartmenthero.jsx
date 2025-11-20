@@ -53,8 +53,6 @@ export default function Apartmenthero() {
                         convenience wherever you go
                     </p>
                 </div>
-
-                {/* SEARCH BOX */}
                 <div
                     className="
                         absolute
@@ -97,8 +95,6 @@ export default function Apartmenthero() {
                             </select>
                         </div>
                     </div>
-
-                    {/* PRICE RANGE */}
                     <div>
                         <label className="text-xs text-white/90 mb-2 block font-medium">
                             Price Range

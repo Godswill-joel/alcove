@@ -11,8 +11,6 @@ export default function OurStory() {
                     className="rounded-[22px] object-cover w-full md:w-screen h-[75vh]"
                 />
             </div>
-
-            
             <div className="w-screen h-dvh  flex flex-col justify-center md:pl-16 text-center md:text-left">
                 <h2
                     className="text-4xl tracking-wide md:text-7xl lg:text-7xl font-bold text-[#333333] mb-6"
@@ -20,7 +18,6 @@ export default function OurStory() {
                 >
                     Our Story
                 </h2>
-
                 <p
                     className="text-lg md:text-5xl tracking-wider font-light text-gray-700 leading-relaxed mx-auto md:mx-0"
                     style={{ fontFamily: "Inter" }}
@@ -28,7 +25,7 @@ export default function OurStory() {
                     Born from a passion for modern living, Alcove was created to make
                     finding premium shortlets simple, secure, and satisfying. We believe
                     every traveler deserves a space that feels both luxurious and familiar
-                     whether for a night or a few months.
+                    whether for a night or a few months.
                 </p>
             </div>
 

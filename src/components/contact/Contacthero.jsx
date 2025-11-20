@@ -13,8 +13,7 @@ export default function ContactHero() {
                         backgroundImage: 'url("/img/contacthero.png")',
                     }}
                 />
-
-                <div
+               <div
                     className="absolute inset-0 bg-cover bg-center md:hidden"
                     style={{
                         backgroundImage: 'url("/img/contactheromobile.jpg")',

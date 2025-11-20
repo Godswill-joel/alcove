@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-
 import Bedroom from "../../../public/assets/Bedroom.png";
 import Bathroom from "../../../public/assets/Bathroom.png";
 import Guests from "../../../public/assets/Guests.png";
