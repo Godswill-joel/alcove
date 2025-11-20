@@ -51,7 +51,7 @@ export default function HowItWorks() {
                         </h3>
                         <p
                             className="text-gray-600 
-                    text-base sm:text-lg md:text-2xl 
+                    text-base sm:text-lg md:text-xl 
                     tracking-wide leading-relaxed"
                             style={{ fontFamily: "Inter" }}
                         >
