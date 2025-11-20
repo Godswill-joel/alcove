@@ -3,6 +3,7 @@ import Email from "../../../public/Logo/Email.png";
 import Phonecontact from "../../../public/Logo/Phone.png";
 import Whatsapp from "../../../public/Logo/Whatsapp.webp";
 import Location from "../../../public/Logo/Location.png";
+import { Link } from "react-router-dom";
 
 const socialLinks = [
   {
@@ -53,6 +54,26 @@ export default function ContactSection() {
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
   };
 
+  const handleClick = (item) => {
+    let action = "";
+  
+    if (item.id === 1) {
+      action = `mailto:${item.label}`;
+    }
+  
+    else if (item.id === 2) {
+      const number = item.label.replace(/\s+/g, "");
+      action = `tel:${number}`;
+    }
+  
+    else if (item.id === 3) {
+      const number = item.label.replace(/\s+/g, "");
+      action = `https://wa.me/${number}`;
+    }
+  
+    window.location.href = action;
+  };
+
   return (
     <section className="px-6 md:px-16 lg:px-20 py-16 bg-white w-full">
       <div className="flex flex-col md:flex-row justify-between w-full gap-16">
@@ -83,7 +104,7 @@ export default function ContactSection() {
 
           <form
             onSubmit={handleSubmit}
-            className="p-6 space-y-5 shadow-sm max-w-xl"
+            className="p-6 space-y-5 shadow-sm max-w-xl border border-gray-200 rounded-xl"
           >
 
             <div>
@@ -171,7 +192,16 @@ export default function ContactSection() {
             {socialLinks.map((item) => (
               <li key={item.id} className="flex items-center gap-3">
                 <img src={item.img} alt={item.label} className="w-5 h-5 object-contain" />
-                <span>{item.label}</span>
+                <Link
+                  to="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(item);
+                  }}
+                  className="hover:text-gray-800"
+                >
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
