@@ -22,19 +22,22 @@ export default function OurValues() {
           Our Values
         </h2>
 
-        <ul className="space-y-6">
+        <ul className="space-y-6 flex flex-col items-start md:items-start lg:items-start">
           {values.map((value, index) => (
-            <li key={index}>
+            <li key={index} className="w-full">
               <p
-                className="text-lg md:text-3xl lg:text-3xl text-gray-700 leading-relaxed font-light"
+                className="text-left md:text-left text-lg md:text-3xl lg:text-3xl text-gray-700 leading-relaxed font-light"
                 style={{ fontFamily: "Inter" }}
               >
-                <span className="font-semibold text-3xl text-black tracking-wider ">{value.title}:</span>{" "}
+                <span className="font-semibold text-3xl text-black tracking-wider">
+                  {value.title}:
+                </span>{" "}
                 {value.description}
               </p>
             </li>
           ))}
         </ul>
+
       </div>
     </section>
   );

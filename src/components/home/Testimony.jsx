@@ -10,9 +10,9 @@ export default function Testimonials() {
     useEffect(() => {
         function updatePerPage() {
             const w = window.innerWidth;
-            if (w < 640) setPerPage(1);           
-            else if (w < 1024) setPerPage(2);     
-            else setPerPage(3);                   
+            if (w < 640) setPerPage(1);
+            else if (w < 1024) setPerPage(2);
+            else setPerPage(3);
         }
         updatePerPage();
         window.addEventListener("resize", updatePerPage);
@@ -20,9 +20,9 @@ export default function Testimonials() {
     }, []);
 
     const total = testimonials.length;
-    
+
     function getVisible() {
-        if (startIndex + perPage <= total) 
+        if (startIndex + perPage <= total)
             return testimonials.slice(startIndex, startIndex + perPage);
 
         const first = testimonials.slice(startIndex);
@@ -58,6 +58,15 @@ export default function Testimonials() {
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
     }, [perPage, total]);
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [perPage, total]);
+
 
     const visible = getVisible();
 
@@ -66,14 +75,14 @@ export default function Testimonials() {
             <div className="max-w-[1600px] mx-auto">
                 <div className="flex flex-wrap items-start justify-between mb-10 gap-4">
                     <div>
-                        <h2 
+                        <h2
                             className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900"
                             style={{ fontFamily: "Manrope" }}
                         >
                             Guest Reviews / Testimonials
                         </h2>
 
-                        <p 
+                        <p
                             className="mt-2 text-lg sm:text-xl text-[#000000]"
                             style={{ fontFamily: "inter" }}
                         >
@@ -81,7 +90,7 @@ export default function Testimonials() {
                         </p>
                     </div>
                     <div className="flex items-center space-x-2">
-                        <button 
+                        <button
                             onClick={handlePrev}
                             aria-label="Previous testimonials"
                             className="w-10 h-10 flex items-center justify-center"
@@ -89,7 +98,7 @@ export default function Testimonials() {
                             <ChevronLeft />
                         </button>
 
-                        <button 
+                        <button
                             onClick={handleNext}
                             aria-label="Next testimonials"
                             className="w-10 h-10 flex items-center justify-center"
@@ -103,18 +112,18 @@ export default function Testimonials() {
                     tabIndex={-1}
                     aria-live="polite"
                     className={`grid gap-6 
-                        ${perPage === 1 ? "grid-cols-1" : 
-                          perPage === 2 ? "grid-cols-1 sm:grid-cols-2" : 
-                          "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}
+                        ${perPage === 1 ? "grid-cols-1" :
+                            perPage === 2 ? "grid-cols-1 sm:grid-cols-2" :
+                                "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}
                 >
                     {visible.map((t) => (
                         <article
                             key={t.id}
                             className="bg-gray-100 rounded-xl shadow-sm p-10 flex flex-col"
                             style={{
-                                width: "100%",         
-                                maxWidth: "490px",    
-                                height: "547px",       
+                                width: "100%",
+                                maxWidth: "490px",
+                                height: "547px",
                                 margin: "0 auto"
                             }}
                         >
@@ -145,8 +154,8 @@ export default function Testimonials() {
 
                             <div className="text-4xl leading-none text-gray-800 mb-3">“</div>
 
-                            <p 
-                                className="text-xl sm:text-xl text-[#000000] leading-relaxed mb-6 flex-1" 
+                            <p
+                                className="text-xl sm:text-xl text-[#000000] leading-relaxed mb-6 flex-1"
                                 style={{ fontFamily: "Manrope" }}
                             >
                                 {t.text}

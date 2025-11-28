@@ -133,7 +133,7 @@ export default function Features() {
                 hover:bg-[#1B2C43] transition
               "
             >
-              <ArrowUpRight size={20} />
+               <ArrowUpRight size={16} />
             </Link>
 
           </div>
