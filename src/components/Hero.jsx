@@ -61,10 +61,10 @@ export default function Hero() {
                         absolute 
                         w-[92%] sm:w-[360px] md:w-[420px] lg:w-[460px]
 
-                        left-1/2 -translate-x-1/2         /* MOBILE center */
+                        left-1/2 -translate-x-1/2        
                         bottom-6 sm:bottom-10
 
-                        md:right-12 md:left-auto md:translate-x-0   /* DESKTOP fix back to position */
+                        md:right-12 md:left-auto md:translate-x-0 
 
                         bg-white/10 backdrop-blur-md border border-white/30
                         rounded-2xl p-6 space-y-5
@@ -81,19 +81,36 @@ export default function Hero() {
                     </div>
                     <div className="grid grid-cols-2 gap-3">
                         <div>
-                            <label className="text-xs text-white/90 mb-1 block font-medium">Check In</label>
-                            <select className="w-full bg-white/10 border border-white/40 text-white rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-white/50 outline-none">
-                                <option className="text-black">Select date</option>
-                            </select>
-                        </div>
+                            <label className="text-xs text-white/90 mb-1 block font-medium">
+                                Check In
+                            </label>
 
+                            <input
+                                type="date"
+                                className="
+                w-full bg-white/10 border border-white/40
+                text-white rounded-lg px-3 py-2 text-sm
+                focus:ring-2 focus:ring-white/50 outline-none
+                [&::-webkit-calendar-picker-indicator]:invert
+            " />
+                        </div>
                         <div>
-                            <label className="text-xs text-white/90 mb-1 block font-medium">Check Out</label>
-                            <select className="w-full bg-white/10 border border-white/40 text-white rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-white/50 outline-none">
-                                <option className="text-black">Select date</option>
-                            </select>
+                            <label className="text-xs text-white/90 mb-1 block font-medium">
+                                Check Out
+                            </label>
+
+                            <input
+                                type="date"
+                                className="
+                w-full bg-white/10 border border-white/40
+                text-white rounded-lg px-3 py-2 text-sm
+                focus:ring-2 focus:ring-white/50 outline-none
+                [&::-webkit-calendar-picker-indicator]:invert
+            "
+                            />
                         </div>
                     </div>
+
                     <div>
                         <label className="text-xs text-white/90 mb-2 block font-medium">Price Range</label>
 

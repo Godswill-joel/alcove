@@ -81,18 +81,30 @@ export default function Apartmenthero() {
                             <label className="text-xs text-white/90 mb-1 block font-medium">
                                 Check In
                             </label>
-                            <select className="w-full bg-white/10 border border-white/40 text-white rounded-lg px-3 py-2 text-sm">
-                                <option className="text-black">Select date</option>
-                            </select>
-                        </div>
 
+                            <input
+                                type="date"
+                                className="
+                w-full bg-white/10 border border-white/40
+                text-white rounded-lg px-3 py-2 text-sm
+                focus:ring-2 focus:ring-white/50 outline-none
+                [&::-webkit-calendar-picker-indicator]:invert
+            " />
+                        </div>
                         <div>
                             <label className="text-xs text-white/90 mb-1 block font-medium">
                                 Check Out
                             </label>
-                            <select className="w-full bg-white/10 border border-white/40 text-white rounded-lg px-3 py-2 text-sm">
-                                <option className="text-black">Select date</option>
-                            </select>
+
+                            <input
+                                type="date"
+                                className="
+                w-full bg-white/10 border border-white/40
+                text-white rounded-lg px-3 py-2 text-sm
+                focus:ring-2 focus:ring-white/50 outline-none
+                [&::-webkit-calendar-picker-indicator]:invert
+            "
+                            />
                         </div>
                     </div>
                     <div>
@@ -145,7 +157,7 @@ export default function Apartmenthero() {
                             <span>₦{max.toLocaleString()}</span>
                         </div>
                     </div>
-                    <button className="w-full bg-[#0A1A33]/90 hover:bg-[#132a54] transition text-white py-3 rounded-xl font-medium flex justify-between items-center gap-2 shadow-lg text-sm">
+                    <button className="w-full bg-[#0A1A33]/90 hover:bg-[#132a54] transition text-white py-3 px-6 rounded-xl font-medium flex justify-between items-center gap-2 shadow-lg text-sm">
                         Search
                         <img src={SearchIcon} alt="search" className="w-5" />
                     </button>
@@ -157,11 +169,11 @@ export default function Apartmenthero() {
                 -translate-x-1/2 lg:translate-x-0
                 z-10
             ">
-                 <Link
+                <Link
                     to="/contact"
                     className="inline-flex items-center justify-center text-white font-bold bg-[#0B1C33] hover:bg-[#0B1C33CC] transition-all w-[300px] h-[70px] rounded-[60px]"
                 >
-                   Book Now
+                    Book Now
                 </Link>
             </div>
         </section>

@@ -8,6 +8,7 @@ export default function CallToAction({
     title = "Ready For Your Next Stay?",
     subtitle = "Book A Premium Shortlet With Alcove Today",
     buttonText = "Book Now",
+    to="/apartments",
     onButtonClick,
 }) {
     const [isMobile, setIsMobile] = useState(false);
@@ -59,7 +60,7 @@ export default function CallToAction({
             <div className="absolute left-1/2 transform -translate-x-1/2 bottom-12 sm:left-16 sm:translate-x-0 sm:bottom-14 md:left-24 md:bottom-10 z-10 ">
 
                 <Link
-                    to="/apartments"
+                    to={to}
                     onClick={onButtonClick}
                     className="inline-flex items-center justify-center text-white font-bold bg-[#0B1C33] hover:bg-[#0B1C33CC] transition-all w-[300px] h-[70px] rounded-[60px]"
                 >
